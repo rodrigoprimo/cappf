@@ -28,6 +28,10 @@ hr {
 	background: #9E0000;
 }
 
+ul {
+	margin-left: 20px;
+}
+
 /* GENERAL LAYOUT EXPLANATION
  *
  * The tiki application is enclosed as a whole in tiki-main tiki-main contains three divs: tiki-top,
@@ -520,6 +524,7 @@ div.simplebox {
 	border : 1px solid;
 	background-color : #FAF2E5;
 	border-color: #DE9A9B;
+	font-size: 11px;
 }
 
 /* Prevent forms from generating unwanted padding or margins */
