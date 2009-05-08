@@ -28,8 +28,8 @@ hr {
 	background: #9E0000;
 }
 
-ul {
-	margin-left: 20px;
+ul, ol {
+	padding-left: 20px;
 }
 
 /* GENERAL LAYOUT EXPLANATION
