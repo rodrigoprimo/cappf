@@ -46,40 +46,39 @@ ul, ol {
 
 /* This div encloses the whole Tiki application */
 DIV#tiki-main {
-	background:    red;
 	height:   100%;
-	margin-top:   0px;
-	margin-bottom:   0px;
-	margin-right:   0px;
-	margin-left:   0px;
+	margin:   0px;
 }
 
 /* This is the header */
 DIV#tiki-top {
-	background-color:    #ffffff;
-	color:   white;
 	padding-right:   0px;
-}
-
-DIV#tiki-top > a {
-	color:    white;
-	text-decoration:   none;
 }
 
 /* This is the middle */
 DIV#tiki-mid {
-	background:    white;
 	height:   auto;
 	padding-bottom:   0px;
+}
+
+#tiki-midtbl {
+	width: 1004px !important;
+	margin: auto;
 }
 
 /* And this is the footer */
 DIV#tiki-bot {
 	color:    white;
-	padding-top:    5px;
-	margin-top:   0px;
+	margin:   auto;
 	background:   #9E0000;
-	padding-bottom:   5px;
+	width:	1004px;
+	font-size: 10px;
+	text-align: center;
+	padding: 5px;
+}
+DIV#tiki-bot a {
+	color:    white;
+	text-decoration:   none;
 }
 
 /* The three columns */
