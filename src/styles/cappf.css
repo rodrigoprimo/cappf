@@ -222,9 +222,15 @@ div.box-Fotos > div.box-data {
 	border: 0;
 	padding: 0;
 }
+div.box-Firefox > div.box-data {
+	background:    none;
+	border: 0;
+	padding: 0;
+}
 
 div#Fotos {
 	padding-left: 5px;
+	font-size: 10px !important;
 }
 
 div.box-data li {
