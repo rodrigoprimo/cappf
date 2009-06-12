@@ -138,7 +138,6 @@ span.off-option {
 /********************************************** Personalizações ******************************************************/
 
 div.noticias {
-	margin-top: 26px;
 	border: 1px solid #ccc;
 	padding: 10px;
 	padding-top: 0;
@@ -151,27 +150,24 @@ div.noticias {
 	
 }
 
-div.noticias h2 {
-	font-size: 20px;
-	margin: -33px 0 10px;
+div#siteheader {
+margin:auto;
+position:relative;
+width:1004px;
 }
-div.noticias h3 {
-	font-size: 11px;
-	margin: 0;
+div#sitesearchbar {
+color:#660000;
+font-family:Verdana,Arial,sans-serif;
+font-size:11px;
+font-weight:bold;
+position:absolute;
+right:10px;
+top:10px;
 }
-div.noticias h4 {
-	font-weight: normal;
-	font-size: 10px;
-	margin: 0;
-	color: gray;
+div#sitesearchbar select, div#sitesearchbar input {
+font-size:9px;
+font-weight:normal;
 }
-div.noticias hr {
-	color: #ccc;
-	background: #ccc;
-	width: 100%;
-}
-
-
 /********************************************* GENERAL STYLE PROPERTIES **********************************************/
 
 /* BOXES boxes are used to present a box with a title bar and content, they are used for modules and they
@@ -861,20 +857,19 @@ H4 {
 	font-family:    Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size:   11px;
 	color:   black;
-	text-decoration:   underline;
+	text-decoration:   none;
 }
+.trailer { color: #9e0000; }
 
 .link:active, .gallink:active, .jukeboxlink:active, .bloglink:active, .fgallink:active, .trailer:active, .opencomlink:active, .commentslink:active, .admlink:active, .forumbutlink:active {
 	font-family:    Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size:   11px;
-	color:   black;
-	text-decoration:   underline;
 }
 
 .link:hover, .gallink:hover, .bloglink:hover, .jukeboxlist:hover, .fgallink:hover, .trailer:hover, .opencomlink:hover, .commentslink:hover, .admlink:hover, .forumbutlink:hover {
 	font-family:    Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size:   11px;
-	color:   black;
+	color:   #9e0000;
 	text-decoration:   underline;
 }
 
@@ -1410,74 +1405,44 @@ div.fgaldesc {
 /* The article title bar */
 div.articletitle {
 	font-family:    Verdana, Arial, Helvetica, sans-serif;
-	color:   #333333;
+	color:   #9e0000;
 	font-size:   11px;
-	font-weight:   bold;
-	background-color:   #ffffff;
-	border:   1px solid #B0CE95;
-	border-bottom:   0px;
-	padding-left:   0.8em;
-	padding-right:   0.6em;
-	padding-top:   0.5em;
-	padding-bottom:   0.5em;
-	margin-top:   5px;
-	width:   98%;
-	clear:   both;
+	text-align: justify;
+	clear: both;
+	margin-top: 10px;
 }
 
 /* The article heading */
 div.articleheading {
-	background:    white;
-	border:   1px solid #B0CE95;
-	padding-left:   0.8em;
-	padding-right:   0.6em;
-	padding-top:   0.5em;
-	padding-bottom:   0.5em;
-	border-bottom:   0px;
 	font-family:   Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size:   11px;
-	width:   98%;
-	clear:   both;
 }
 
 div.articletrailer {
-	background:    white;
-	border:   1px solid #B0CE95;
-	border-bottom:   1px solid #B0CE95;
-	border-top:   1px solid #C9CAC8;
-	margin-bottom:   20px;
 	font-family:   Verdana, Geneva, Arial, Helvetica, sans-serif;
-	font-size:   9px;
-	clear:   both;
-	width:   98%;
-	padding-left:   0.8em;
-	padding-right:   0.9em;
-	padding-top:   0.5em;
-	padding-bottom:   0.5em;
+	font-size:   11px;
+	float: right;
+}
+td.articletrailer {
+	font-size: 11px;
+}
+.articletrailer .linkbut {
+	font-size: 11px;
+	background: none;
 }
 
 /* Text in the article heading */
 div.articleheadingtext {
 	font-family:    Verdana, Geneva, Arial, Helvetica, sans-serif;
-	font-size:   12px;
-	display: inline;
-	line-height : 16px;
+	font-size:   11px;
+	text-align: justify;
 }
 
 /* The body */
 div.articlebody {
-	background:    white;
-	border:   1px solid #B0CE95;
-	padding-left:   0.8em;
-	padding-right:   0.6em;
-	padding-top:   0.5em;
-	padding-bottom:   0.5em;
-	margin:   10px 0px;
 	font-family:   Verdana, Geneva, Arial, Helvetica, sans-serif;
-	font-size:   12px;
-	width:   98%;
-	clear:   both;
-	line-height : 16px;
+	font-size:   11px;
+	text-align: justify;
 }
 
 /* The article title */
@@ -1486,24 +1451,40 @@ span.titlea {
 	font-size:   17px;
 	font-weight:   bold;
 }
+div.noticias span.titlea {
+	font-size: 11px;
+}
 
 /* The author, date and number of reads */
 span.titleb {
 	font-family:    Verdana, Geneva, Arial, Helvetica, sans-serif;
-	font-size:   10px;
+	color: #666;
 }
-
 /* The trailer */
 span.trailer {
 	font-family:    Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size:   11px;
-	font-weight:   bold;
 }
 
 .trailer {
 	font-family:    Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size:   11px;
-	font-weight:   bold;
+}
+
+.noticias #article_comments, .noticias #article_print {
+	display:none;
+}
+
+.noticias #article_read_more {
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url(cappf/page_white_text.png);
+	background-position:100% 50%;
+	background-repeat:no-repeat;
+	padding-bottom:0;
+	padding-left:0;
+	padding-right:18px;
+	padding-top:1px;
 }
 
 /******************************************************* CALENDAR **********************************************************/
