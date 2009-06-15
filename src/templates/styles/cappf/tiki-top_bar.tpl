@@ -32,20 +32,22 @@ title="tikiwiki.org">{tr}Tiki community{/tr}</a>
 {/if}
 {if $prefs.feature_siteidentity eq 'y' and $prefs.feature_topbar_custom_code}{eval var=$prefs.feature_topbar_custom_code}{/if}
 *}
-
-<table width=1004 align=center bgcolor=white border=0 cellpadding=0 cellspacing=0>
+<div style="width: 1004px; margin: auto; position: relative">
+<div id="menu_login">
+<table>
 	<tr>
-		<td><img src=styles/cappf/logo_1024.jpg /></td>
-	</tr>
-	<tr>
-		<td>
-			<div align='right' style='float: right; margin-top: -2px;'>
-				<a href="tiki-index.php?page=Sobre%20o%20site" alt="Sobre o Site" class="linkmenu">Sobre o Site</a> | <a href="tiki-index.php?page=Ajuda" alt="Ajuda" class="linkmenu">Ajuda</a> | {if $user}<a href='tiki-logout.php' class='linkmenu'>Sair de {$user}</a>{else}<a href="tiki-login_scr.php" alt="Login" class="linkmenu">Entrar</a>{/if}&nbsp;&nbsp;
-				{if $user}<br /><span class='linkmenu' style='color: #9e0000'>Olá <b>{$u_info.prefs.realName}</b>, bem-vind@ ao site do CAPPF!</span>&nbsp;&nbsp;{/if}
-	    		</div>
-
-			{phplayers id=44 type=horiz}
-
-		</td>
+		<td><a href="tiki-index.php?page=Sobre%20o%20site" alt="Sobre o Site">Sobre o Site</a></td>
+		<td><a href="tiki-index.php?page=Ajuda" alt="Ajuda">Ajuda</a></td>
+		<td>{if $user}<a href='tiki-logout.php'>Sair de {$user}</a>{else}<a href="tiki-login_scr.php" alt="Login">Entrar</a>{/if}</td>
 	</tr>
 </table>
+</div>
+{if $user}
+<div id="usuario">
+	<span>Olá <b>{$u_info.prefs.realName}</b>, bem-vind@ ao site do CAPPF!</span>
+</div>
+{/if}
+
+
+<div id="menusup" >{phplayers id=44 type=horiz}</div>
+</div>

@@ -10,7 +10,7 @@
 html {height:100%; margin-bottom:1px;/* Não oculta a barra de rolagem em Firefox */}
 
 body {
-	background-color:    #FAF8F0;
+	background:    #FAF2E5 url(cappf/fundo.png) repeat-x;
 	margin-top:   0px;
 	margin-left:   0px;
 	margin-bottom:   0px;
@@ -54,12 +54,15 @@ DIV#tiki-main {
 /* This is the header */
 DIV#tiki-top {
 	padding-right:   0px;
+	background: transparent url(cappf/logo.png) no-repeat scroll 50%;
+	height: 215px;
 }
 
 /* This is the middle */
 DIV#tiki-mid {
 	height:   auto;
 	padding-bottom:   0px;
+	background: url(cappf/fundo2.png) repeat-y 50%;
 }
 
 #tiki-midtbl {
@@ -70,16 +73,63 @@ DIV#tiki-mid {
 /* And this is the footer */
 DIV#tiki-bot {
 	color:    white;
-	margin:   auto;
-	background:   #9E0000;
-	width:	1004px;
 	font-size: 10px;
 	text-align: center;
-	padding: 5px;
+	padding-top: 20px;
+	background: #9E0000 url(cappf/fundo_bottom.png) no-repeat 50% 0;
 }
 DIV#tiki-bot a {
 	color:    white;
 	text-decoration:   none;
+}
+
+div#menusup {
+	position: absolute;
+	right: 17px;
+	top: 187px;
+}
+
+div#menusup img {
+	display: none;
+}
+
+div#menu_login {
+	-moz-border-radius-bottomleft: 10px;
+	border-radius-bottomleft: 10px;
+	background-color: #2f2020;
+	color: white;
+	padding: 4px;
+	position: absolute;
+	right: 170px;
+	top: 0;
+	height: 26px;
+}
+
+div#menu_login td:first-child {
+	border: none;
+}
+
+div#menu_login td {
+	border-left: 1px dotted #ccc;
+	padding: 4px;
+}
+
+div#menu_login a {
+	color: white;
+	text-decoration: none;
+	font-size: 10px;
+}
+div#menu_login a:hover {
+	color: #F07085;
+	text-decoration: none;
+}
+div#usuario {
+	position: absolute;
+	top: 36px;
+	right: 10px;
+	color: #2f2020;
+	font-size: 11px;
+	font-family: Verdana, Arial, sans-serif;
 }
 
 /* The three columns */
@@ -87,20 +137,17 @@ TD#leftcolumn {
 	padding-left:    2px;
 	padding-right:   2px;
 	vertical-align:   top;
-	background:   #ffffff;
 	width:   180px;
 }
 
 TD#rightcolumn {
 	padding-left:    2px;
 	vertical-align:   top;
-	background:   #ffffff;
 	width:   180px;
 }
 
 TD#centercolumn {
 	padding-right:    2px;
-	background:   #ffffff;
 	vertical-align:   top;
 	width: 100%;
 }
@@ -151,22 +198,145 @@ div.noticias {
 }
 
 div#siteheader {
-margin:auto;
-position:relative;
-width:1004px;
+	margin:auto;
+	position:relative;
+	width:1004px;
 }
+
 div#sitesearchbar {
-color:#660000;
-font-family:Verdana,Arial,sans-serif;
-font-size:11px;
-font-weight:bold;
-position:absolute;
-right:10px;
-top:10px;
+	color:#660000;
+	background-color: #9e0000;
+	font-family:Verdana,Arial,sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	position:absolute;
+	right:0;
+	top:0;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	padding: 4px;
+	-moz-border-radius-bottomright: 10px;
+	border-radius-bottomright: 10px;
+	width: 162px;
 }
-div#sitesearchbar select, div#sitesearchbar input {
-font-size:9px;
-font-weight:normal;
+
+div#sitesearchbar .search_top {
+	border: none;
+	border-right: 1px dotted #666;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+}
+
+input#busca {
+	margin-bottom: -4px;
+	margin-left: -4px;
+}
+
+div#bemvindo_msg {
+	background-color: #DE9A9B;
+	border: 3px solid;
+	border-color: #DE9A9B;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 0;
+	margin: 0;
+}
+
+div#bemvindo_msg div.interno {
+	border: 1px solid #2f2020;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	background: white url(cappf/fundo_bemvindo.png) repeat-x 0 100%;
+	padding: 0;
+	margin: 0;
+}
+div#bemvindo_msg table {
+	margin-bottom: 5px;
+}
+
+div#bemvindo_msg th {
+	background: none;
+	font-size: 20px;
+	font-family: Georgia, sans-serif;
+	color: #2f2020;
+	text-align: left;
+	border: none;
+	padding: 10px;
+}
+
+div#bemvindo_msg td:first-child {
+	border-right: 1px dotted #aaa;
+	font-size: 10px;
+	color: #333;
+}
+div#bemvindo_msg td {
+	padding: 10px;
+}
+
+a.cadastro {
+	padding: 5px;
+	background-color: #9e0000;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+a#chamada div#chamada {
+	width: 312px;
+	border: none;
+	border-bottom: 1px dotted #ccc;
+	padding: 8px;
+	padding-right: 100px;
+	font-size: 10px;
+	height: 60px;
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
+	background-color: transparent;
+}
+
+a#chamada {
+	width: 420px;
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+a#chamada:hover {
+	background: white url(cappf/fundo_bemvindo.png) repeat-x 0 100%;
+}
+
+a.padrao {
+	background: none;
+}
+
+a.texto div#chamada {
+	background-image: url(cappf/texto.png);
+}
+a.texto:hover div#chamada {
+	background-image: url(cappf/texto2.png);
+}
+a.blablabla div#chamada {
+	background-image: url(cappf/blablabla.png);
+}
+a.blablabla:hover div#chamada {
+	background-image: url(cappf/blablabla2.png);
+}
+a.foto div#chamada {
+	background-image: url(cappf/foto.png);
+}
+a.foto:hover div#chamada {
+	background-image: url(cappf/foto2.png);
+}
+
+span.chamada_titulo {
+	color: #9e0000;
+	font-size: 14px;
 }
 /********************************************* GENERAL STYLE PROPERTIES **********************************************/
 
@@ -413,6 +583,11 @@ div.separator {
 	margin-left: -5px;
 	padding: 5px;
 	width:   100%;
+	border-bottom: 1px dotted #2f2020;
+}
+
+div.separator:first-child {
+	border-top: 1px dotted #2f2020;
 }
 
 /* Links in menus */
@@ -1485,6 +1660,10 @@ span.trailer {
 	padding-left:0;
 	padding-right:18px;
 	padding-top:1px;
+}
+
+.noticias h2 {
+	margin-top: -10px;
 }
 
 /******************************************************* CALENDAR **********************************************************/
@@ -2746,10 +2925,11 @@ div#loadstats {
 }
 
 .horbaritem a {
-  font-family: Georgia, Verdana, Arial, sans-serif;
-  font-size: 16px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: #2f2020;
 }
 
 .harbaritem a:visited {
@@ -2758,6 +2938,7 @@ div#loadstats {
 
 .horbaritem a:hover {
   text-decoration: none;
+  color: #933;
 }
 
 .mdkhorbaritem  {
@@ -2792,7 +2973,6 @@ div#loadstats {
   position: absolute;
   left: 0;
   top: 0;
-  background: #FFFFFF;
   visibility: hidden;
 }
 
@@ -2801,14 +2981,22 @@ div#loadstats {
 }
 
 .mdksubframe  {
+  background: #FFFFFF;
   z-index: 1000;
   position: relative;
   display: block;
   border: 1px solid #ccc;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 0 7px;
+}
+
+DIV.mdkitem:first-child  {
+  border: none;
 }
 
 .mdkitem  {
-  border-top: 1px solid #white;
+  border-top: 1px dotted #ccc;
   position: relative;
   text-align: left;
   white-space: nowrap;
@@ -3081,12 +3269,7 @@ background-color: #edeeef;
 }
 
 /**** outros *****/
-
-DIV#logo {
-	text-align: right;
-}
-
-
+
 .rbox-data {
 	border-right: #ddcccc 1px solid;
 	PADDING-RIGHT: 2px;
@@ -3103,5 +3286,10 @@ DIV#logo {
 }
 
 
+
+/*excenção para imagens não estourarem a tela!*/
+div#tiki-center div.showimage img {
+	max-width: 640px;
+}
 
 /* end of css file */
