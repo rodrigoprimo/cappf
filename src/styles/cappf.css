@@ -190,8 +190,6 @@ div.noticias {
 	padding-top: 0;
 	font-size: 10px;
 	width: 400px;
-	float: left !important;
-	clear: both !important;
 	text-align: justify !important;
 	background: url(cappf/noticias.jpg) no-repeat 100% 100%;
 	
