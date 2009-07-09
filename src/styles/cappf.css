@@ -190,6 +190,8 @@ div.noticias {
 	padding-top: 0;
 	font-size: 10px;
 	width: 400px;
+	float: left !important;
+	clear: both !important;
 	text-align: justify !important;
 	background: url(cappf/noticias.jpg) no-repeat 100% 100%;
 	
@@ -1472,8 +1474,6 @@ div.postbody {
 	font-size:   12px;
 	font-weight:   normal;
 	background:   #ffffff;
-	border:   1px solid black;
-	border-bottom:   0px;
 	padding-left:   0.8em;
 	padding-right:   0.6em;
 	padding-top:   0.5em;
@@ -1786,29 +1786,35 @@ span.trailer {
 	margin-bottom:   5px;
 	padding-left:   2px;
 	padding-right:   2px;
-}
-
-#comzoneopen {
-	display:    block;
-	margin-left:   1px;
-	margin-right:   1px;
-	margin-top:   5px;
-	margin-bottom:   5px;
-	padding-left:   2px;
-	padding-right:   2px;
+	width: 550px;
+	background-color: #ddd;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	
 }
 
 /* Post comment form */
 div.commentspost {
 	display:    inherit;
-	border:   1px solid black;
-	margin-top:   10px;
-	margin-right:   10px;
-	padding-right:   0px;
-	padding-top:   0px;
-	padding-bottom:   0px;
-	margin-bottom:   10px;
-	width:   99%;
+	margin:   10px;
+}
+
+div.commentspostbody {
+	background-color: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 6px;
+}
+
+div.commentsuseravatar {
+	height: 45px;
+	width: 45px;
+	background: #ccc;
+	border: 3px solid white;
+	outline: 1px solid #aaa;
+	margin: 10px;
+	float: left;
+	text-align: center;
 }
 
 /* Help box*/
