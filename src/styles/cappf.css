@@ -191,10 +191,12 @@ div.noticias {
 	font-size: 10px;
 	width: 400px;
 	float: left !important;
-	clear: both !important;
 	text-align: justify !important;
-	background: url(cappf/noticias.jpg) no-repeat 100% 100%;
-	
+	background: url(cappf/noticias.jpg) no-repeat 100% 100%;	
+}
+
+div.noticias img {
+	display: none;
 }
 
 div#siteheader {
@@ -3273,7 +3275,8 @@ background-color: #edeeef;
 }
 
 /**** outros *****/
-
+
+
 .rbox-data {
 	border-right: #ddcccc 1px solid;
 	PADDING-RIGHT: 2px;
